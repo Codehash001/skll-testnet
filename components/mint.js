@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState,useEffect } from "react"
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'

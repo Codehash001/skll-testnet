@@ -1,51 +1,20 @@
 const { createAlchemyWeb3 } = require('@alch/alchemy-web3')
-const { MerkleTree } = require('merkletreejs')
-const keccak256 = require('keccak256')
-const whitelist = require('../scripts/whitelist.js')
-
-
-
-
 import { config } from '../dapp.config'
 
 const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL)
-
 const contract = require('../artifacts/contracts/SKLL.sol/SKLL.json')
 const nftContract = new web3.eth.Contract(contract.abi, config.contractAddress)
 
-// Calculate merkle root from the whitelist array
-const leafNodes = whitelist.map((addr) => keccak256(addr))
-const merkleTree = new MerkleTree(leafNodes, keccak256, { sortPairs: true })
-const root = merkleTree.getRoot()
-
-// Supply Amounts 
 
 export const getTotalMinted = async () => {
   const totalMinted = await nftContract.methods.totalSupply().call()
   return totalMinted
 }
 
-export const getNumberMinted = async () => {
-  const NumberMinted = await nftContract.methods.numberMinted(window.ethereum.selectedAddress) .call()
-  return NumberMinted
-}
-
 export const getMaxSupply = async () => {
   const maxSupply = await nftContract.methods.maxSupply().call()
   return maxSupply
 }
-
-//Max Limits
-export const getMaxperWallet = async() => {
-  const maxLimit = await nftContract.methods.MaxperWallet().call()
-  return maxLimit
-}
-export const getMaxperWalletWl = async() => {
-  const maxLimit = await nftContract.methods.MaxperWalletWL().call()
-  return maxLimit
-}
-
-// States
 
 export const isPausedState = async () => {
   const paused = await nftContract.methods.paused().call()
@@ -57,111 +26,13 @@ export const isPublicSaleState = async () => {
   return publicSale
 }
 
-
-export const isWlMintState = async () => {
-  const WlMint = await nftContract.methods.wlMint().call()
-  return WlMint
+export const getPublicsalePrice = async () => {
+    const PublicsalePrice = await nftContract.methods.cost().call()
+    return PublicsalePrice
 }
 
-// Minting Prices
 
-// export const getWlCost = async () => {
-//     const PresalePrice = await nftContract.methods.wlCost().call()
-//     return PresalePrice
-// }
-// export const getFirstCost = async () => {
-//     const Price = await nftContract.methods.firsCost().call()
-//     return Price
-// }
-// export const getSecondCost = async () => {
-//   const Price = await nftContract.methods.secondCost().call()
-//   return Price
-// }
-// export const getThirdCost = async () => {
-//   const Price = await nftContract.methods.thirdCost().call()
-//   return Price
-// }
-
-
-
-//Set up wl mint------------------------------------------------------------------------------------>
-
-export const wlMint = async (mintAmount) => {
-  if (!window.ethereum.selectedAddress) {
-    return {
-      success: false,
-      status: 'To be able to mint, you need to connect your wallet'
-    }
-  }
-
-  const leaf = keccak256(window.ethereum.selectedAddress)
-  const proof = merkleTree.getHexProof(leaf)
-
-  // Verify Merkle Proof
-  const isValid = merkleTree.verify(proof, leaf, root)
-
-  if (!isValid) { 
-    return {
-      success: false,
-      status: '❌ Invalid Merkle Proof - You are not whitelisted'
-    }
-  }
-  
-  const wallet =(window.ethereum.selectedAddress)
-  const numberMinted = await nftContract.methods.numberMinted(wallet) .call()
-  const maxLimit = await nftContract.methods.MaxperWalletWL().call()
-  const cost = await nftContract.methods.wlCost()
-  const AbleToMint = (maxLimit - numberMinted)
-
-  if (AbleToMint <  mintAmount){
-    return {
-      success: false,
-      status: '📌 Exceeded max mint amount per wallet'  
-    }
-  }
-  const nonce = await web3.eth.getTransactionCount(
-    window.ethereum.selectedAddress,
-    'latest'
-  )
-
-  // Set up our Ethereum transaction
-
-  const tx = {
-    to: config.contractAddress,
-    from: window.ethereum.selectedAddress,
-    value: parseInt(
-      web3.utils.toWei(String(cost), 'Wei')
-    ).toString(16), // hex
-    gas: String(25000 * mintAmount),
-    data: nftContract.methods
-      .WLMint(mintAmount, proof)
-      .encodeABI(),
-    nonce: nonce.toString(16)
-  }
-
-  try {
-    const txHash = await window.ethereum.request({
-      method: 'eth_sendTransaction',
-      params: [tx]
-    })
-
-    return {
-      success: true,
-      status: (
-        <a href={`https://etherscan.io/tx/${txHash}`} target="_blank">
-          <p className='underline'>✅ Check out your transaction on Etherscan ✅</p>
-        </a>
-      )
-    }
-  } catch (error) {
-    return {
-      success: false,
-      status: '😞 Smth went wrong:' + error.message
-    }
-  }
-}
-
-//Set up public sale mint----------------------------------------------------------------------------------------------------->
+//Set up public sale mint
 
 export const publicMint = async (mintAmount) => {
   if (!window.ethereum.selectedAddress) {
@@ -170,28 +41,24 @@ export const publicMint = async (mintAmount) => {
       status: 'To be able to mint, you need to connect your wallet'
     }
   }
-
-
   const wallet =(window.ethereum.selectedAddress)
   const numberMinted = await nftContract.methods.numberMinted(wallet) .call()
-  const totalMinted = await nftContract.methods.totalSupply().call()
-  const maxLimit = await nftContract.methods.MaxperWallet().call()
-  const AbleToMint = maxLimit - numberMinted 
+  console.log('You have already minted : ' + numberMinted)
+  console.log ('you are going to mint : ' + mintAmount)
+  const AbleToMint = (config.maxMintAmount - numberMinted)
 
+  if (AbleToMint <  mintAmount){
+    return {
+      success: false,
+      status: '📌 You have already minted ' + numberMinted +' NFT/s ' +
+       'You are able to mint only '+ AbleToMint +' more NFT/s ' 
+    }
+  }
 
   const nonce = await web3.eth.getTransactionCount(
     window.ethereum.selectedAddress,
     'latest'
   )
-  
-
-  if (AbleToMint <  mintAmount){
-    return {
-      success: false,
-      status: '📌 Exceeded max mint amount per wallet' 
-    }
-  }
-
 
   
 
@@ -200,9 +67,9 @@ export const publicMint = async (mintAmount) => {
     to: config.contractAddress,
     from: window.ethereum.selectedAddress,
     value: parseInt(
-      web3.utils.toWei(String(config.publicSalePrice*mintAmount), 'Wei')
+      web3.utils.toWei(String(config.publicSalePrice*mintAmount), 'ether')
     ).toString(16), // hex
-    gas: String(30000),
+    gas: String(25000 * mintAmount),
     data: nftContract.methods.publicSaleMint(mintAmount).encodeABI(),
     nonce: nonce.toString(16)
   }
@@ -217,7 +84,8 @@ export const publicMint = async (mintAmount) => {
       success: true,
       status: (
         <a href={`https://etherscan.io/tx/${txHash}`} target="_blank">
-          <p className='underline'>✅ Check out your transaction on Etherscan ✅</p>
+          <p>✅ Check out your transaction on Etherscan:</p>
+          <p>{`https://etherscan.io/tx/${txHash}`}</p>
         </a>
       )
     }
@@ -227,69 +95,4 @@ export const publicMint = async (mintAmount) => {
       status: '😞 Smth went wrong:' + error.message
     }
   }
-
-}
-
-
-  // setup airdrop ------------------------------------------------------------------------------------
-
-export const airdrop = async (mintAmount) => {
-  if (!window.ethereum.selectedAddress) {
-    return {
-      success: false,
-      status: 'To be able to mint, you need to connect your wallet'
-    }
-  }
-
-
-  const wallet =(window.ethereum.selectedAddress)
-  const numberMinted = await nftContract.methods.numberMinted(wallet) .call()
-  const maxLimit = await nftContract.methods.MaxPerWalletAirdrop().call()
-  const AbleToMint = maxLimit - numberMinted
-
-
-  const nonce = await web3.eth.getTransactionCount(
-    window.ethereum.selectedAddress,
-    'latest'
-  )
-  
-
-  if (AbleToMint <  mintAmount){
-    return {
-      success: false,
-      status: '📌 Exceeded max mint amount per wallet' 
-    }
-  }
-
-    // Set up our Ethereum transaction
-    const tx = {
-      to: config.contractAddress,
-      from: window.ethereum.selectedAddress,
-      gas: String(30000),
-      data: nftContract.methods.Airdrop(mintAmount).encodeABI(),
-      nonce: nonce.toString(16)
-    }
-  
-    try {
-      const txHash = await window.ethereum.request({
-        method: 'eth_sendTransaction',
-        params: [tx]
-      })
-  
-      return {
-        success: true,
-        status: (
-          <a href={`https://etherscan.io/tx/${txHash}`} target="_blank">
-            <p className='underline'>✅ Check out your transaction on Etherscan ✅</p>
-          </a>
-        )
-      }
-    } catch (error) {
-      return {
-        success: false,
-        status: '😞 Smth went wrong:' + error.message
-      }
-    }
-  
-
 }
