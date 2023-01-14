@@ -8,16 +8,16 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
 
       // <!-- component -->
 <section 
-            class="py-20 px-4 lg:px-16 overflow-hidden relative z-10" data-aos="fade-up" 
+            class="py-20 px-4 lg:px-16 overflow-hidden relative z-10 font-Archivo" data-aos="fade-up" 
             id="contact"
         >
             <div 
                 class="container"
             >
                 <div
-                    class="mb-5 flex items-center max-w-md"
+                    class="mb-5 flex items-center max-w-md justify-center"
                 >
-                    <h2 class="text-slate-900 dark:text-gray-200 text-3xl font-bold"> Contact Me</h2>
+                    <h2 class="bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent text-3xl font-bold"> Contact Us</h2>
                 </div>
                 <div 
                     class="flex flex-col lg:flex-row lg:items-center text-slate-900 dark:text-gray-200 lg:justify-between -mx-4"
@@ -30,11 +30,8 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
                         <div 
                             class="max-w-[570px] mb-12 lg:mb-0"
                         >
-                        <p class="text-4xl font-extrabold text-body-color leading-relaxed stand__out__text mb-9 mx-5">
-                            Lorem ipsum dolor. Nulla porttitor accumsan tincidunt.
-                        </p>
                         <p class="text-2xl font-medium text-body-color leading-relaxed mb-9 mx-5">
-                            Based in <span class="font-bold italic">America</span>, available worldwide.
+                        We&apos;ll get in touch as soon as possible
                         </p>
 
                         
@@ -135,7 +132,7 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
                                     w-full
                                     text-gray-100
                                     hover:text-gray-700
-                                    bg-yellow-400
+                                    bg-gradient-to-r from-pink-500 via-red-600 to-red-800 hover:bg-gradient-to-bl
                                     rounded
                                     border border-primary
                                     dark:border-slate-600
@@ -143,7 +140,7 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
                                     transition
                                     ease-in-out
                                     duration-500
-                                    hover:bg-yellow-300
+                                    
                                     "
                                     >
                                 Send Message
