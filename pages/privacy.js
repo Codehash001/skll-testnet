@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from '../components/footer'
 
 
 
@@ -11,12 +12,12 @@ export default function Home() {
         <meta name="Description" content="Skulls Klubs LimitLess!" />
         <link rel="icon" href="/Logoicon.png" />
       </Head>
-      <div className='text-sm font-Archivo'>
+      <div className='text-sm font-Archivo md:mx-8 mx-3'>
       
       <p>
       Privacy Policy<br/><br/>
 
-We at &aposSkull Klubs Limitless&apos take our users&apos privacy very seriously. We understand that the data we collect and process is personal to our users and we are committed to protecting and safeguarding this information. This Privacy Policy explains how we collect, use, share, and protect the data of our users.<br/><br/>
+We at &apos;Skull Klubs Limitless&apos; take our users&apos; privacy very seriously. We understand that the data we collect and process is personal to our users and we are committed to protecting and safeguarding this information. This Privacy Policy explains how we collect, use, share, and protect the data of our users.<br/><br/>
 
 Collection of Data<br/><br/>
 
@@ -46,6 +47,8 @@ Contact Us<br/><br/>
 
 If you have any questions or concerns about our Privacy Policy, please contact us at [email address].
       </p>
+      
+      <Footer/>
       </div>
     
       <div class="dark:hidden blob w-[800px] h-[800px] rounded-[999px] absolute top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200"></div>
