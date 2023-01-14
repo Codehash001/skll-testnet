@@ -14,11 +14,6 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
             <div 
                 class="container"
             >
-                <div
-                    class="mb-5 flex items-center max-w-md justify-center"
-                >
-                    <h2 class="bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent text-3xl font-bold"> Contact Us</h2>
-                </div>
                 <div 
                     class="flex flex-col items-center text-slate-900 dark:text-gray-200 lg:justify-between -mx-4"
                 >
@@ -28,8 +23,9 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
                         data-aos-delay="200"
                     >
                         <div 
-                            class="max-w-[570px] mb-12 lg:mb-0"
+                            class="max-w-[570px] mb-12 lg:mb-0 flex-col items-center"
                         >
+                        <h2 class="bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent text-3xl font-bold"> Contact Us</h2>
                         <p class="text-2xl font-medium text-body-color leading-relaxed mb-9 mx-5">
                         We&apos;ll get in touch as soon as possible
                         </p>
