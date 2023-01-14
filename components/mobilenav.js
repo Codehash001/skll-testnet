@@ -68,12 +68,13 @@ function Navbar () {
 useEffect(() => {
   if (previouslySelectedWallet !== null && onboard) {
     onboard.walletSelect(previouslySelectedWallet)
-    setisConnected(true)
+    
   }
 }, [onboard, previouslySelectedWallet])
 
   const connectWalletHandler = async () => {
     const walletSelected = await onboard.walletSelect()
+    setisConnected(true)
     if (walletSelected) {
       await onboard.walletCheck()
       window.location.reload(false)
