@@ -18,7 +18,7 @@ export default function FAQs() {
   };
  
   return (
-    <div id='faqs'className='md:mx-16 mx-2 p-6 my-[44px] rounded-lg'>
+    <div id='faqs'className='md:mx-16 mx-2 p-6 my-[44px] rounded-lg'data-aos="fade-up">
       <h1 className='md:text-[40px] text-[30px] bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent font-Archivo text-center uppercase font-semibold tracking-wide mb-8'> Frequently Asked Questions</h1>
       <Accordion open={open === 1} animate={customAnimation}>
         <AccordionHeader onClick={() => handleOpen(1)} className='text-black dark:text-white font-Archivo  text-[22px]'>
