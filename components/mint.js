@@ -108,7 +108,7 @@ useEffect(() => {
     
 
         <div className=" bg-gray-300/60 filter rounded-md flex flex-col items-center
-    bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100  w-auto shadow-lg shadow-black/60 relative">
+    bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100  md:w-auto w-full shadow-lg shadow-black/60 relative">
         <div className="flex flex-col items-center w-auto"> 
           <div className="flex flex-col items-center w-full py-4 mt-6 md:mt-0 md:px-16 px-4">
           
