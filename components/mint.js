@@ -103,7 +103,7 @@ useEffect(() => {
         <div className='lg:w-auto w-full h-full lg:px-16 lg:py-16 filter backdrop-blur-sm rounded-lg'>
 
       
-    <img src='/web01.png' class="blob w-[500px] h-[500px]  absolute top-[-50px] right-[-250px] -z-10 blur-md  bg-opacity-50 animate-pulse-slow overflow-x-hidden"/>
+    <img src='/web01.png' class="hidden md:flex blob w-[500px] h-[500px]  absolute top-[-50px] right-[-250px] -z-10 blur-md  bg-opacity-50 animate-pulse-slow overflow-x-hidden"/>
     <img src='/web02.png' class=" blob w-[500px] h-[500px] absolute bottom-[-70px] left-[-280px] -z-10 blur-md bg-opacity-60 animate-pulse-slow overflow-x-hidden"/>
     
 
