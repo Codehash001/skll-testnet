@@ -76,8 +76,9 @@ useEffect(() => {
     if (walletSelected) {
       await onboard.walletCheck()
       window.location.reload(false)
-      setisConnected(true)
+      
     }
+    setisConnected(true)
   }
   const incrementMintAmount = () => {
     if (mintAmount < maxMintAmount) {
