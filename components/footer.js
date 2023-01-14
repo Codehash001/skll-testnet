@@ -10,10 +10,10 @@ export default function Footer(){
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
         <ul class="text-gray-600 dark:text-gray-400 md:flex">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline mx-2">Privacy Policy</a>
+                        <a href="/privacy" class="hover:underline mx-2">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline mx-2">Terms &amp; Conditions</a>
+                        <a href="/terms" class="hover:underline mx-2">Terms &amp; Conditions</a>
                     </li>
                 </ul>
             <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
