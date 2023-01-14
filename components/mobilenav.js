@@ -101,7 +101,7 @@ const connectWalletHandler = async () => {
           </div>
           
           <div onClick={handleNav}
-          className=' md:hidden rounded-md p-2 bg-white mr-2 cursor-pointer' >
+          className=' md:hidden rounded-md p-2 bg-white dark:bg-gray-700 mr-2 cursor-pointer' >
             <AiOutlineMenu size={18} />
           </div>
 
