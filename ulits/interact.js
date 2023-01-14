@@ -44,10 +44,6 @@ export const getMaxperWalletWl = async() => {
   const maxLimit = await nftContract.methods.MaxperWalletWL().call()
   return maxLimit
 }
-export const getMaxperWalletAirdrop = async() => {
-  const maxLimit = await nftContract.methods.MaxPerWalletAirdrop().call()
-  return maxLimit
-}
 
 // States
 
@@ -61,10 +57,6 @@ export const isPublicSaleState = async () => {
   return publicSale
 }
 
-export const isAirdropState = async () => {
-  const WlMint = await nftContract.methods.airdropEnabled().call()
-  return WlMint
-}
 
 export const isWlMintState = async () => {
   const WlMint = await nftContract.methods.wlMint().call()
@@ -183,11 +175,6 @@ export const publicMint = async (mintAmount) => {
   const wallet =(window.ethereum.selectedAddress)
   const numberMinted = await nftContract.methods.numberMinted(wallet) .call()
   const totalMinted = await nftContract.methods.totalSupply().call()
-
-  const firstCost = await nftContract.methods.firstCost().call()
-  const secondCost = await nftContract.methods.secondCost().call()
-  const thirdCost = await nftContract.methods.thirdCost().call()
-  const cost = ( totalMinted > 7700 ? thirdCost : totalMinted > 4000 ? secondCost : firstCost)
   const maxLimit = await nftContract.methods.MaxperWallet().call()
   const AbleToMint = maxLimit - numberMinted 
 
@@ -213,7 +200,7 @@ export const publicMint = async (mintAmount) => {
     to: config.contractAddress,
     from: window.ethereum.selectedAddress,
     value: parseInt(
-      web3.utils.toWei(String(cost*mintAmount), 'Wei')
+      web3.utils.toWei(String(config.publicSalePrice*mintAmount), 'Wei')
     ).toString(16), // hex
     gas: String(30000),
     data: nftContract.methods.publicSaleMint(mintAmount).encodeABI(),
