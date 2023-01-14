@@ -153,7 +153,7 @@ useEffect(() => {
                       />
                     </svg>
                   </button>
-                  <p className="flex items-center justify-center flex-1 grow text-center font-bold text-brand-02 text-3xl md:text-4xl">
+                  <p className="flex items-center justify-center flex-1 grow text-center font-bold text-yellow-900 text-3xl md:text-4xl">
                   {mintAmount}  
                   </p>
                   <button
@@ -184,7 +184,7 @@ useEffect(() => {
                     <div className="flex items-center space-x-3">
                     <p>
                          {Number.parseFloat((config.publicSalePrice)*mintAmount).toFixed(
-                          4
+                          2
                         )} {' '} 
                        
                          ETH

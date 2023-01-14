@@ -82,7 +82,7 @@ const connectWalletHandler = async () => {
                  <Darkmodebutton/>
               </div>
              <button type="button" class="text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
-             onClick={connectWalletHandler}>{walletAddress?'Connected' :'Connect Wallet'}</button>
+             onClick={connectWalletHandler}><h1>{!walletAddress?'Connect Wallet' :'Connected'}</h1></button>
           </div>
           </ul>
           </div>
