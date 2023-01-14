@@ -47,7 +47,7 @@ export default function SimpleSlider() {
   <div className="md:mx-4 grid grid-cols-1 lg:grid-cols-5 gap-5 md:mt-0 mt-2">
     
    {data.map((item) =>
-   <div key={item.id}className="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+   <div key={item.id}className="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500 items-center justify-center">
       <div className="relative">
         <img className="w-[200px] h-[200px] rounded-xl" src={item.image}alt="img" />
         <p className="absolute top-0 bg-yellow-300 text-gray-800 font-semibold py-1 px-3 rounded-br-lg rounded-tl-lg">1 Eth</p>
