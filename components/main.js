@@ -39,7 +39,7 @@ export default function Home(){
             </div>
             <div className="lg:mx-8 md:mx-4 mx-2 md:mt-0 mt-2">
                 <img src="/bg.gif"
-                className='md:w-[700px] md:h-[700px] w-[400px] h-[500px]'/>
+                className='w-[400px] h-[500px]'/>
             </div>
         </div>
         </div>
