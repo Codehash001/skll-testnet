@@ -100,16 +100,16 @@ useEffect(() => {
   return (
     <div id='mint'>
     <div className='flex flex-col items-center lg:mx-16 mx-2'>
-        <div className='lg:w-auto w-full h-full px-16 py-16 filter backdrop-blur-sm rounded-lg'>
+        <div className='lg:w-auto w-full h-full lg:px-16 lg:py-16 filter backdrop-blur-sm rounded-lg'>
 
       
-    <img src='/web01.png' class="hidden md:flex blob w-[500px] h-[500px]  absolute top-[-50px] right-[-250px] -z-10 blur-md  bg-opacity-50 animate-pulse-slow overflow-x-hidden"/>
+    <img src='/web01.png' class="blob w-[500px] h-[500px]  absolute top-[-50px] right-[-250px] -z-10 blur-md  bg-opacity-50 animate-pulse-slow overflow-x-hidden"/>
     <img src='/web02.png' class=" blob w-[500px] h-[500px] absolute bottom-[-70px] left-[-280px] -z-10 blur-md bg-opacity-60 animate-pulse-slow overflow-x-hidden"/>
     
 
         <div className=" bg-gray-300/60 filter rounded-md flex flex-col items-center
     bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100  md:w-auto w-full shadow-lg shadow-black/60 relative">
-        <div className="flex flex-col items-center w-auto"> 
+        <div className="flex flex-col items-center md:w-auto w-full"> 
           <div className="flex flex-col items-center w-full py-4 mt-6 md:mt-0 md:px-16 px-4">
           
           <div className='pb-4  flex flex-col items-center'>
