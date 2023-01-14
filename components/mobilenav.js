@@ -10,6 +10,7 @@ function Navbar () {
 
   const [nav, setNav] = useState(false);
   const [walletAddress, setWalletAddress] = useState('')
+  const [onboard, setOnboard] = useState(null)
 
   useEffect( () => {
     const onboardData = initOnboard( {
