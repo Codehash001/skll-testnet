@@ -145,7 +145,7 @@ useEffect(() => {
                  <Darkmodebutton/>
               </div>
              
-               {isConnected ? (
+               {/* {isConnected ? (
                   <button
                     className='text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center'
                      >
@@ -158,7 +158,14 @@ useEffect(() => {
                      >
                     Connect wallet
                   </button> 
-                  )}
+                  )} */}
+            <h3 className="text-sm tracking-widest">
+                {walletAddress
+                ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
+                : 'Not connected'} 
+                
+            </h3>
+
           </div>
           </ul>
           </div>
