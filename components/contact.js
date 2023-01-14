@@ -25,7 +25,7 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
                         <div 
                             class="max-w-[570px] mb-12 lg:mb-0 flex-col items-center"
                         >
-                        <h2 class="bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent text-3xl font-bold text-center"> Contact Us</h2>
+                        <h2 class="bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent md:text-5xl text-3xl font-bold text-center"> Contact Us</h2>
                         <p class="text-2xl font-medium text-body-color leading-relaxed mb-9 mx-5 text-center">
                         We&apos;ll get in touch as soon as possible
                         </p>
