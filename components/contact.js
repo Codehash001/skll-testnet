@@ -20,7 +20,7 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
                     <h2 class="bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent text-3xl font-bold"> Contact Us</h2>
                 </div>
                 <div 
-                    class="flex flex-col lg:flex-row lg:items-center text-slate-900 dark:text-gray-200 lg:justify-between -mx-4"
+                    class="flex flex-col items-center text-slate-900 dark:text-gray-200 lg:justify-between -mx-4"
                 >
                 
                     <div 
@@ -40,7 +40,7 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
                     </div>
                     <div class="w-full lg:w-1/2 xl:w-5/12 px-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
                         <div class="bg-gray-100 dark:bg-slate-800 relative rounded-lg p-8 sm:p-12 shadow-lg">
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div class="mb-6">
                                 <input
                                     type="text"
@@ -82,6 +82,7 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
                                     name="email"
                                     id="email"
                                     />
+                                    <ValidationError prefix="Email" field="email" errors={state.errors} />
                             </div>
                             <div class="mb-6">
                                 <input
@@ -124,6 +125,7 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
                                     name="message"
                                     id="message"
                                     ></textarea>
+                                    <ValidationError prefix="Message" field="message" errors={state.errors} />
                             </div>
                             <div>
                                 <button
@@ -140,11 +142,13 @@ const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
                                     transition
                                     ease-in-out
                                     duration-500
-                                    
                                     "
+                                    disabled={state.submitting}
                                     >
                                 Send Message
                                 </button>
+                                <div className="my-2 text-sm text-gray-400">{state.succeeded ? "Thanks for your submission!": ''}</div>
+                                <ValidationError errors={state.errors} />
                             </div>
                         </form>
                         <div>
