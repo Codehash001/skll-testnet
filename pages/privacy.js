@@ -16,7 +16,7 @@ export default function Home() {
       <p>
       Privacy Policy<br/><br/>
 
-We at 'Skull Klubs Limitless' take our users privacy very seriously. We understand that the data we collect and process is personal to our users and we are committed to protecting and safeguarding this information. This Privacy Policy explains how we collect, use, share, and protect the data of our users.<br/><br/>
+We at &aposSkull Klubs Limitless&apos take our users&apos privacy very seriously. We understand that the data we collect and process is personal to our users and we are committed to protecting and safeguarding this information. This Privacy Policy explains how we collect, use, share, and protect the data of our users.<br/><br/>
 
 Collection of Data<br/><br/>
 
