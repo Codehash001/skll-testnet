@@ -12,10 +12,10 @@ export default function Home() {
         <meta name="Description" content="Skulls Klubs LimitLess!" />
         <link rel="icon" href="/Logoicon.png" />
       </Head>
-      <div className='text-sm font-Archivo md:mx-8 mx-3'>
+      <div className='text-sm font-Archivo md:mx-8 mx-3 my-4'>
       
       <p>
-      Privacy Policy<br/><br/>
+      <h1 className='font-semibold text-md'>Privacy Policy</h1><br/><br/>
 
 We at &apos;Skull Klubs Limitless&apos; take our users&apos; privacy very seriously. We understand that the data we collect and process is personal to our users and we are committed to protecting and safeguarding this information. This Privacy Policy explains how we collect, use, share, and protect the data of our users.<br/><br/>
 
@@ -48,8 +48,10 @@ Contact Us<br/><br/>
 If you have any questions or concerns about our Privacy Policy, please contact us at [email address].
       </p>
       
-      <Footer/>
+      
       </div>
+      
+      <Footer/>
     
       <div class="dark:hidden blob w-[800px] h-[800px] rounded-[999px] absolute top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200"></div>
     <div class="dark:hidden blob w-[1000px] h-[1000px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-red-200 via-gray-100 to-blue-100"></div>
