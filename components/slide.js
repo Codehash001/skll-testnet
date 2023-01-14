@@ -1,5 +1,5 @@
 
-
+import {Link} from 'react-scroll/modules';
 import React from "react";
 import Slider from "react-slick";
 import data from "./data.json";

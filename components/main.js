@@ -1,4 +1,5 @@
 import data from './data.json';
+import {Link} from 'react-scroll/modules';
 export default function Home(){
 
     return (
