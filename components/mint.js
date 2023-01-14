@@ -128,7 +128,7 @@ useEffect(() => {
           </div>
           <div className='flex flex-col'>
             <p className="text-2xl font-medium font-Kanit mt-5 tracking-wide">
-                  <span className="text-red-600">1{'  '} </span>/<span className="text-red-600">{'  '} 900{'  '}</span>Minted
+                  <span className="text-red-600">{totalMinted}{'  '} </span>/<span className="text-red-600">{'  '} {maxSupply}{'  '}</span>Minted
             </p>
           </div>
           

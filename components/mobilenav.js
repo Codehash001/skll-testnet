@@ -3,15 +3,52 @@ import {Link} from 'react-scroll/modules';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import Darkmodebutton from './darkmode';
-import { initOnboard } from "../ulits/onboard"
+import { initOnboard } from "../ulits/onboard";
+import {
+  getTotalMinted,
+  getMaxSupply,
+  isPausedState,
+  isPublicSaleState,
+  publicMint          } from '../ulits/interact';
+  import { config } from '../dapp.config';
 
 
 function Navbar () {
 
   const [nav, setNav] = useState(false);
-  const [walletAddress, setWalletAddress] = useState('')
-  const [onboard, setOnboard] = useState(null)
+  const [maxSupply, setMaxSupply] = useState(0)
+  const [totalMinted, setTotalMinted] = useState(0)
+  const [maxMintAmount, setMaxMintAmount] = useState(0)
+  const [paused, setPaused] = useState(false)
+  const [isPublicSale, setIsPublicSale] = useState(false)
+  const [isConnected , setisConnected] = useState(false)
+  
 
+  const [status, setStatus] = useState(null)
+  const [mintAmount, setMintAmount] = useState(1)
+  const [isMinting, setIsMinting] = useState(false)
+  const [onboard, setOnboard] = useState(null)
+  const [walletAddress, setWalletAddress] = useState('')
+
+  useEffect(() => {
+    const init = async () => {
+      setMaxSupply(await getMaxSupply())
+      setTotalMinted(await getTotalMinted())
+
+      setPaused(await isPausedState())
+      const isPublicSale = await isPublicSaleState()
+      setIsPublicSale(isPublicSale)
+
+      setMaxMintAmount(
+        isPublicSale ? config.maxMintAmount : '0'
+      )
+      
+      
+    }
+
+    init()
+  }, [])
+  
   useEffect( () => {
     const onboardData = initOnboard( {
       address: (address) => setWalletAddress(address ? address : ''),
@@ -34,14 +71,39 @@ useEffect(() => {
   }
 }, [onboard, previouslySelectedWallet])
 
-
-const connectWalletHandler = async () => {
-  const walletSelected = await onboard.walletSelect()
-  if (walletSelected) {
-    await onboard.walletCheck()
-    window.location.reload(false)
+  const connectWalletHandler = async () => {
+    const walletSelected = await onboard.walletSelect()
+    if (walletSelected) {
+      await onboard.walletCheck()
+      window.location.reload(false)
+      setisConnected(true)
+    }
   }
-}
+  const incrementMintAmount = () => {
+    if (mintAmount < maxMintAmount) {
+      setMintAmount(mintAmount + 1)
+    }
+  }
+
+  const decrementMintAmount = () => {
+    if (mintAmount > 1) {
+      setMintAmount(mintAmount - 1)
+    }
+  }
+
+
+  const publicMintHandler = async () => {
+    setIsMinting(true)
+
+    const { success, status } = await publicMint(mintAmount)
+
+    setStatus({
+      success,
+      message: status
+    })
+
+    setIsMinting(false)
+  }
 
   const handleNav = () => {
     setNav(!nav);
@@ -82,7 +144,7 @@ const connectWalletHandler = async () => {
                  <Darkmodebutton/>
               </div>
              
-               {walletAddress ? (
+               {isConnected ? (
                   <button
                     className='text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center'
                      >
