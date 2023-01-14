@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import { ThemeProvider } from 'next-themes'
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 export default function App({ Component, pageProps }) {
 
