@@ -6,7 +6,7 @@ export default function Home(){
         <div className="flex md:flex-row flex-col items-center lg:mx-16 md:mx-8 mx-2 justify-between">
             <div className="lg:mx-8 md:mx-4 mx-2 flex flex-col md:items-start items-center">
                 <h1 className="text-gray-600 text-2xl md:mb-[-5px]">Welcome To</h1>
-                <ul className="font-Archivo flex items-start">
+                <ul className="font-Archivo flex md:flex-row flex-col md:items-start items-center">
                     <li className="mx-4 text-start flex items-end">
                         <h1 className="md:text-8xl text-5xl uppercase font-bold bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent">S</h1>
                         <h1 className="md:text-5xl text-3xl font-medium">kulls</h1>
