@@ -44,7 +44,7 @@ export default function SimpleSlider() {
     <div className="lg:mx-16 mx-2 ">
       {/* slider */}
         <div className="flex justify-center items-center my-20">
-  <div className="md:mx-4 grid grid-cols-2 lg:grid-cols-5 gap-5">
+  <div className="md:mx-4 grid grid-cols-1 lg:grid-cols-5 gap-5 md:mt-0 mt-2">
     
    {data.map((item) =>
    <div key={item.id}className="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
