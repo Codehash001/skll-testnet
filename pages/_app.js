@@ -4,7 +4,7 @@ import { ThemeProvider } from 'next-themes'
 export default function App({ Component, pageProps }) {
   return (
    
-    <div className='w-srceen overflow-x-hidden'>
+    <div>
   <ThemeProvider enableSystem={true} attribute='class'>
   <Component {...pageProps} />
   </ThemeProvider>

@@ -2,7 +2,7 @@ import data from './data.json';
 export default function Home(){
 
     return (
-        <div className="mt-[100px] w-full" id='home'>
+        <div className="mt-[100px]" id='home'>
         <div className="flex md:flex-row flex-col items-center lg:mx-16 md:mx-8 mx-2 justify-between">
             <div className="lg:mx-8 md:mx-4 mx-2 flex flex-col md:items-start items-center">
                 <h1 className="text-gray-600 text-2xl md:mb-[-5px]">Welcome To</h1>
