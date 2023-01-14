@@ -128,16 +128,16 @@ useEffect(() => {
         </Link>
         <div>
           <ul className='hidden md:flex font-Archivo front-medium items-center justify-betweeen '>
-            <li className='mx-3 text-[18px] hover:tracking-wide'>
+            <li className='mx-3 text-[18px] hover:tracking-wide hover:underline hover:underline-offset-8 font-medium'>
             <Link className="cursor-pointer" activeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
             </li>
-            <li className='mx-3 text-[18px]  hover:tracking-wide'>
+            <li className='mx-3 text-[18px]  hover:tracking-wide hover:underline hover:underline-offset-8 font-medium'>
             <Link className="cursor-pointer" activeClass ="active" to='mint' spy={true} smooth={true} offset={-70} duration={500}>Mint</Link>
             </li>
-            <li className='mx-3 text-[18px]  hover:tracking-wide'>
+            <li className='mx-3 text-[18px]  hover:tracking-wide hover:underline hover:underline-offset-8 font-medium'>
               <Link className="cursor-pointer" activeClass ="active" to='contact' spy={true} smooth={true} offset={-70} duration={500}>Contact Us</Link>
             </li>
-            <li className='mx-3 text-[18px]  hover:tracking-wide'>
+            <li className='mx-3 text-[18px]  hover:tracking-wide hover:underline hover:underline-offset-8 font-medium'>
               <Link className="cursor-pointer" activeClass ="active" to='faqs' spy={true} smooth={true} offset={50} duration={500}>FAQs</Link>
             </li>
             {/* dark mode button and wallet button */}
