@@ -6,7 +6,7 @@ export default function Contact(){
 const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
     return(
 
-      <div className="flex md:flex-row flex-col items-center" id="contact">
+      <div className="hidden md:flex md:flex-row flex-col items-center" id="contact">
         <h1 className="md:mt-0 mt-6 mx-4 md:text-4xl text-[22px] font-Archivo font-medium text-black dark:text-white">
           <span className="text-[32px] bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent">Tell us a bit about youself...</span>
           <br/><span>We will get in touch as soon as possible</span>
