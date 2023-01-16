@@ -15,8 +15,8 @@ export default function Home() {
       <div className='text-sm font-Archivo md:mx-8 mx-3 my-4'>
       
       <h1 class="privacy-policy-h1">Privacy Policy
-<br><span>Last Updated On 15-Jan-2023</span>
-<br><span>Effective Date 15-Jan-2023</span>
+<br/><span>Last Updated On 15-Jan-2023</span>
+<br/><span>Effective Date 15-Jan-2023</span>
 </h1>
 
 <p class="privacy-policy-p">
