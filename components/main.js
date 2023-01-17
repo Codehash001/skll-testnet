@@ -42,7 +42,7 @@ export default function Home(){
             </div>
             <div className="lg:mx-8 md:mx-4 mx-2 md:mt-0 mt-2">
                 <img src="/bg-gif.gif"
-                className='w-[500px] h-[500px]'/>
+                className='object-cover'/>
             </div>
         </div>
         </div>
