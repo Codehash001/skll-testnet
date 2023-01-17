@@ -9,19 +9,19 @@ export default function Home(){
                 <h1 className="text-gray-400 text-2xl md:mb-[-5px] md:2">Welcome To</h1>
                 <ul className="font-Archivo flex md:flex-row flex-col md:items-start items-center ">
                     <li className="mx-4 text-start flex items-end">
-                        <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent">S</h1>
+                        <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-rose-600 via-red-700 to-red-900 bg-clip-text text-transparent">S</h1>
                         <h1 className="md:text-5xl text-4xl font-medium">kulls</h1>
                     </li>
                     <li className="mx-4 text-start flex items-end">
-                        <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent">K</h1>
+                        <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-rose-600 via-red-700 to-red-900  bg-clip-text text-transparent">K</h1>
                         <h1 className="md:text-5xl text-4xl font-medium">lubs</h1>
                     </li>
                     <li className="mx-4 text-start flex items-end">
-                        <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent">L</h1>
+                        <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-rose-600 via-red-700 to-red-900  bg-clip-text text-transparent">L</h1>
                         <h1 className="md:text-5xl text-4xl font-medium">imit</h1>
                     </li>
                     <li className="mx-4 text-start flex items-end">
-                        <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent">L</h1>
+                        <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-rose-600 via-red-700 to-red-900  bg-clip-text text-transparent">L</h1>
                         <h1 className="md:text-5xl text-4xl font-medium">ess</h1>
                     </li>
                 </ul>
@@ -31,7 +31,7 @@ export default function Home(){
                 </p>
                 <div className="w-full h-auto flex flex-col md:items-start items-center mt-8">
                 <Link className="cursor-pointer" activeClass ="active" to='mint' spy={true} smooth={true} offset={-70} duration={500}>
-                    <button type="button" class="flex text-white dark:text-black bg-gradient-to-r from-pink-500 via-red-600 to-red-800 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-semibold tracking-widest rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+                    <button type="button" class="flex text-white dark:text-black bg-gradient-to-r from-rose-600 via-red-700 to-red-900 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-semibold tracking-widest rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
                     Get your SKLL now
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
