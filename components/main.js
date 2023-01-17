@@ -18,7 +18,7 @@ export default function Home(){
                     </li>
                     <li className="mx-4 text-start flex items-end">
                         <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-rose-600 via-red-700 to-red-600  bg-clip-text text-transparent">L</h1>
-                        <h1 className="md:text-5xl text-4xl font-medium">imit<span className='bg-gradient-to-r from-rose-600 via-red-700 to-red-600'>l</span>ess</h1>
+                        <h1 className="md:text-5xl text-4xl font-medium">imit<span className='bg-gradient-to-r from-rose-600 via-red-700 to-red-600 bg-clip-text text-transparent'>l</span>ess</h1>
                     </li>
                 </ul>
                 <p className="font-Archivo mt-4 md:text-md text-justify">
