@@ -40,7 +40,7 @@ export default function Home(){
                 </Link>
                 </div>
             </div>
-            <div className="lg:mx-8 md:mx-4 mx-2 md:mt-0 mt-2">
+            <div className="lg:mx-8 md:mx-4 mx-2 md:mt-0 mt-2 w-[600px] h-auto">
                 <img src="/bg-gif.gif"
                 className='object-cover'/>
             </div>
