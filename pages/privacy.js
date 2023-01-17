@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Footer from '../components/footer'
-import Doc from './policy.html'
+import Doc from './Policy.html'
 
 
 
