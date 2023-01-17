@@ -1,27 +1,27 @@
 [
     {
         "id":1,
-        "image":"/img1.jpg",
+        "image":"/img1.png",
         "description":"SKLL is unique digital collectibles on the Ethereum blockchain."
     },
     {
         "id":2,
-        "image":"/img2.jpg",
+        "image":"/img2.png",
         "description":"SKLL is unique digital collectibles on the Ethereum blockchain."
     },
     {
         "id":3,
-        "image":"/img3.jpg",
+        "image":"/img3.png",
         "description":"SKLL is unique digital collectibles on the Ethereum blockchain."
     },
     {
         "id":4,
-        "image":"/img4.jpg",
+        "image":"/img4.png",
         "description":"SKLL is unique digital collectibles on the Ethereum blockchain."
     },
     {
         "id":5,
-        "image":"/img5.jpg",
+        "image":"/img5.png",
         "description":"SKLL is unique digital collectibles on the Ethereum blockchain."
     }
     
