@@ -18,21 +18,21 @@ export default function Home() {
         <h1 className='text-center text-2xl font-bold'>LAST UPDATED: JAN 16, 2023</h1>
         <br/>
         <br/>
-        <p className='text-[20px] font-medium md:mx-[-10px]'>Thank you for visiting our Insider Trading Policy. Please read this Insider Trading Policy (&quot;Trading Policy&quot; or &quot;Policy&quot;) carefully because they govern your use of the &quot;Skll Klub Limit Less&quot; brand, original collection of 900 NFT's.
-the website located at https://skll-testnet.vercel.app/ and the content and functionalities accessible via the website (&quot;Site&quot;) offered by &quot;Skll Klub Limit Less&quot; (referred to in these Terms as either &quot;Skll Klub Limit Less&quot;, &quot;us&quot;, &quot;we&quot;, &quot;ours&quot;, &quot;team&quot; or &quot;Company&quot;) &quot;Skll Klub Limit Less&quot; provides its services (described below) and related content to you (&quot;you&quot; or &quot;User&quot;).</p>
+        <p className='text-[20px] font-medium md:mx-[-14px]'>Thank you for visiting our Insider Trading Policy. Please read this Insider Trading Policy (&quot;Trading Policy&quot; or &quot;Policy&quot;) carefully because they govern your use of the &quot;Skll Klub Limit Less&quot; brand, original collection of 900 NFT's.
+the website located at https://skll-testnet.vercel.app/ and the content and functionalities accessible via the website (&quot;Site&quot;) offered by &quot;Skll Klub Limit Less&quot; (referred to in these Terms as either &quot;Skll Klub Limit Less&quot;, &quot;us&quot;, &quot;we&quot;, &quot;ours&quot;, &quot;team&quot; or &quot;Company&quot;) &quot;Skll Klub Limit Less&quot; provides its services (described below) and related content to you (&quot;you&quot; or &quot;User&quot;).</p><br/><br/>
 
 <ul className='list-decimal text-[20px] font-medium'>
   <li>
     <h1 className='text-[22px] font-bold'>Purpose:</h1>
-    <p>Skll Klub Limit Less has adopted this NFT Insider Trading Policy (&quot;Policy&quot;) to help ensure that:</p>
-    <ul className='list-none'>
+    <p>Skll Klub Limit Less has adopted this NFT Insider Trading Policy (&quot;Policy&quot;) to help ensure that:</p><br/>
+    <ul className='list-[lower-latin]'>
       <li>
-        a. Company and any Insiders (defined below) connected to any project involving the creation; marketing, distribution, and/or sale of non-fungible tokens (&quot;NFTs&quot;) by or on behalf of Company (&quot;Project&quot;) comply with applicable laws.
-      </li>
+        Company and any Insiders (defined below) connected to any project involving the creation; marketing, distribution, and/or sale of non-fungible tokens (&quot;NFTs&quot;) by or on behalf of Company (&quot;Project&quot;) comply with applicable laws.
+      </li><br/>
       <li>
-        b. Any distribution of NFT&apos;s by Company to Insiders in connection with a Project is conducted fairly and on equal footing with distributions to the public.
+        Any distribution of NFT&apos;s by Company to Insiders in connection with a Project is conducted fairly and on equal footing with distributions to the public.
       </li>
-        c. Company, the Project, and Insiders do not have even the appearance of improper insider trading.
+        Company, the Project, and Insiders do not have even the appearance of improper insider trading.
       <li>
 
       </li>
@@ -41,12 +41,12 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
   <li>
     <h1 className='text-[25px] font-bold'>Scope:</h1>
     <p>
-      <ul className='list-none'>
+      <ul className='list-[lower-latin]'>
         <li>
-          a. &quot;Insiders&quot; include all directors, officers, employees of Company and any other Individuals Company may designate because they may have access to material nonpublic information concerning a Project (&quot;Inside Information&quot;). Including any artists, developers, project managers, contractors, consultants or other individuals who are providing services in connection with Company or the Project, as well as all of the employees, representatives, affiliates, family member and others in the households of the aforementioned individuals.
-        </li>
+          &quot;Insiders&quot; include all directors, officers, employees of Company and any other Individuals Company may designate because they may have access to material nonpublic information concerning a Project (&quot;Inside Information&quot;). Including any artists, developers, project managers, contractors, consultants or other individuals who are providing services in connection with Company or the Project, as well as all of the employees, representatives, affiliates, family member and others in the households of the aforementioned individuals.
+        </li><br/>
         <li>
-          b. This Policy applies to any and all transactions involving NFT&apos;s issued by or on behalf of Company, including minting NFT&apos;s and both primary and secondary sales.
+          This Policy applies to any and all transactions involving NFT&apos;s issued by or on behalf of Company, including minting NFT&apos;s and both primary and secondary sales.
         </li>
       </ul>
     </p>
@@ -54,15 +54,15 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
   <li>
     <h1 className='text-[25px] font-bold'>Guidance:</h1>
     <p>
-      <ul className='list-none'>
+      <ul className='list-[lower-latin]'>
         <li>
-          a. <span className='undeline font-semibold'>Generally Prohibited </span>Activity As a general matter, an Insider may not use or disclose to any third party any Inside Information about Company or a Project to the advantage of the Insider or any other person in connection with the purchase, sale or other transaction involving an NFT.
+          <span className='undeline font-semibold'>Generally Prohibited </span>Activity As a general matter, an Insider may not use or disclose to any third party any Inside Information about Company or a Project to the advantage of the Insider or any other person in connection with the purchase, sale or other transaction involving an NFT.
+        </li><br/>
+        <li>
+          <span className='undeline font-semibold'>Specific Rules and Prohibitions </span>Without in any way limiting the foregoing general prohibition, the following is a non-exhaustive list of specific rules and prohibitions under this Policy:
         </li>
         <li>
-          b. <span className='undeline font-semibold'>Specific Rules and Prohibitions </span>Without in any way limiting the foregoing general prohibition, the following is a non-exhaustive list of specific rules and prohibitions under this Policy:
-        </li>
-        <li>
-          <ul className='list-[upper-roman]'>
+          <ul className='list-[lower-roman]'>
             <li>
               NFT&apos;s, must be allocated to token holders including Insiders at random.
             </li>
@@ -109,11 +109,11 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
   <li>
     <h1 className='text-[25px] font-bold'>Determining whether information is Material and Nonpublic:</h1>
     <p>
-      <ul className='list-none'>
+      <ul className='list-[lower-latin]'>
         <li>
-          a.<span className='font-semibold underline'>Definition of &quot;Material&quot; Information</span>
+          <span className='font-semibold underline'>Definition of &quot;Material&quot; Information</span>
         
-        <ul className='list-[upper-roman]'>
+        <ul className='list-[lower-roman]'>
           <li>
             There is no bright line test for determining whether particular information is material. Such a determination depends on the facts and circumstances unique to each situation and can&apos;t be made solely based on the potential financial impact of the information.
           </li>
@@ -142,9 +142,9 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
           </li>
           
         </ul>
-      </li>
+      </li><br/>
       <li>
-        b. <span className='font-semibold underline'>Definition of &quot;Nonpublic&quot; Information</span> is &quot;nonpublic&quot; if it has not been made known to the general market of purchasers or potential purchasers of NFT&apos;s through a widely circulated news or wire source or social media channel operated by Company or authorized by Company to make such information public.
+        <span className='font-semibold underline'>Definition of &quot;Nonpublic&quot; Information</span> is &quot;nonpublic&quot; if it has not been made known to the general market of purchasers or potential purchasers of NFT&apos;s through a widely circulated news or wire source or social media channel operated by Company or authorized by Company to make such information public.
       </li>
       </ul>
     </p>
@@ -152,7 +152,7 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
   <li>
     <h1 className='text-[25px] font-bold'>Remedies for Violation:</h1>
     <p>
-      <ul className='list-none'>
+      <ul className='list-[lower-latin]'>
         <li>
           Failure to comply with this NFT Insider Trading Policy may constitute not only a breach of contract with Company, but also may violate applicable criminal and civil law.
 In the event that Company determines that an Insider violated the NFT Insider Trading Policy, the Insider agrees, upon Company&apos;s instruction to immediately disgorge and transfer to Company or any recipient of Company choosing, any/all NFT&apos;s or profits gained because of such violation as well as any compensation Insider received from Company under their applicable contract. Insider agrees to promptly pay and fully satisfy any/all sanctions, fines, losses, judgments or expenses including without limitation, costs of settlement and attorneys&apos; fees, incurred or sustained by Company because of Insider&apos;s failure to comply with this Policy. The foregoing remedies are in addition to any other remedies, both legal and equitable, available to Company under the law.
@@ -163,7 +163,7 @@ In the event that Company determines that an Insider violated the NFT Insider Tr
   <li>
     <h1 className='text-[25px] font-bold'>Contact Information:</h1> 
     <p>
-      <ul className='list-none'>
+      <ul className='list-[lower-latin]'>
         <li>
           If you have any questions about this Insider Trading Policy, please contact us.
         </li>
