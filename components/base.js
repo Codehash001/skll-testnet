@@ -331,7 +331,7 @@ useEffect(() => {
           
           <div className='pb-4  flex flex-col items-center'>
 
-            <h1 className="font-Kanit uppercase font-semibold text-3xl md:text-5xl bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent tracking-wider text-center mt-5">
+            <h1 className="font-Kanit uppercase font-semibold text-3xl md:text-5xl bg-gradient-to-r from-rose-600 via-red-700 to-red-600 bg-clip-text text-transparent tracking-wider text-center mt-5">
             {paused ? 'Will be Live soon' : 'Minting is Live'}
             </h1>
 
