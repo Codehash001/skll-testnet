@@ -273,7 +273,7 @@ useEffect(() => {
                 </ul>
 
                 <p className="font-Archivo mt-4 md:text-md text-justify">
-                  <ul className='list-disc md:ml-[10px]'>
+                  <ul className='list-none '>
                     <li>Every SKLL has own profile page that shows their attributes.</li>
                     <li>Collection with proof of ownership stored on Ethereum blockchain.</li>
                     <li>A single person on the Ethereum blockchain can officially own each one of this unique collection.</li>
