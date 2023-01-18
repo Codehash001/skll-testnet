@@ -260,7 +260,7 @@ useEffect(() => {
                     </li>
                 </ul>
 
-                <ul className="hidden font-Archivo md:flex items-center ">
+                <ul className="hidden font-Archivo md:flex items-center ml-[-12px] ">
                     <li className="mx-4 text-start items-end">
                         <h1 className="md:text-9xl text-6xl uppercase font-bold bg-gradient-to-r from-rose-600 via-red-700 to-red-600 bg-clip-text text-transparent">SKLL</h1>
                         <h1 className="md:text-6xl text-4xl font-medium">
