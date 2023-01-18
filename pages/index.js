@@ -7,6 +7,7 @@ import Contact from '../components/contact'
 import Footer from '../components/footer'
 import FAQs from '../components/FAQs'
 import Mint from '../components/mint'
+import Base from '../components/base'
 
 
 export default function Home() {
@@ -17,10 +18,7 @@ export default function Home() {
         <meta name="Description" content="Skulls Klubs LimitLess!" />
         <link rel="icon" href="/Logoicon.png" />
       </Head>
-      <Navbar/>
-      <Main/>
-      <Slider/>
-      <Mint/>
+      <Base/>
       <Contact/>
       <FAQs/>
       <Footer/>
