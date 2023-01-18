@@ -245,7 +245,7 @@ useEffect(() => {
         <div className="flex md:flex-row flex-col items-center lg:mx-16 md:mx-8 mx-2 justify-between">
             <div className="lg:mx-8 md:mx-4 mx-2 flex flex-col md:items-start items-center">
                 <h1 className="text-gray-400 text-2xl md:mb-[-5px] md:2">Welcome To</h1>
-                <ul className="font-Archivo flex md:flex-row flex-col md:items-start items-center ">
+                <ul className="font-Archivo md:hidden items-center ">
                     <li className="mx-4 text-start flex items-end">
                         <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-rose-600 via-red-700 to-red-600 bg-clip-text text-transparent">S</h1>
                         <h1 className="md:text-5xl text-4xl font-medium">kull</h1>
@@ -259,6 +259,19 @@ useEffect(() => {
                         <h1 className="md:text-5xl text-4xl font-medium">imit<span className='bg-gradient-to-r from-rose-600 via-red-700 to-red-600 bg-clip-text text-transparent'>l</span>ess</h1>
                     </li>
                 </ul>
+
+                <ul className="hidden font-Archivo md:flex items-center ">
+                    <li className="mx-4 text-start flex items-end">
+                        <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-rose-600 via-red-700 to-red-600 bg-clip-text text-transparent">SKLL</h1>
+                        <h1 className="md:text-7xl text-4xl font-medium">
+                          <span className='font-bold uppercase '>- S</span>kull
+                          <span className='font-bold uppercase '>K</span>lub
+                          <span className='font-bold uppercase '>L</span>imit
+                          <span className='font-bold uppercase '>L</span>ess
+                          </h1>
+                    </li>
+                </ul>
+
                 <p className="font-Archivo mt-4 md:text-md text-justify">
                 SKLL is uniquely generated characters that are designed to represent the ownership of digital assets on the Ethereum blockchain.
                 SKLL tokens provide a secure, transparent, and immutable way to own, trade, and manage digital assets. With its cutting-edge technology, SKLL enables users to store and track their digital assets with greater security and efficiency. SKLL also makes it easier to manage and trade digital assets, giving users more control over their digital property.
