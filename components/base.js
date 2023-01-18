@@ -195,7 +195,7 @@ const handleNav = () => {
         
         {/* Side Drawer Menu */}
       <div className ={
-        nav? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500 border-r-2"
+        nav? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500 border-r-2 backdrop-filter backdrop-blur-md"
       :'fixed left-[-100%] top-0 p-10 ease-in duration-500 h-screen'
       }>
       <div className='flex w-full items-center justify-between'>
@@ -216,12 +216,12 @@ const handleNav = () => {
              </div>
           </div>
           <div className='border-b py-4 flex flex-col mt-4'>
-              <p className='uppercase text-[18px] font-Archivo text-center'>
+              <p className='uppercase text-[18px] font-Archivo text-center font-semibold'>
               Skulls Klubs Limit Less
               </p>
             </div>
             <div  className='py-4 flex flex-col '>
-        <ul className='font-Archivo text-center'>
+        <ul className='font-Archivo text-center font-medium'>
             <li  className='py-4 text-sm'>
             <Link onClick={() => setNav(false)}  className="cursor-pointer" activeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
             </li>
@@ -243,7 +243,7 @@ const handleNav = () => {
                     <div className='mx-6'>
                         <Darkmodebutton/>
                     </div>
-                    <button type="button" class="text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
+                    <button type="button" class="mt-4 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
              onClick={connectWalletHandlerMobile}>{walletAddress?'Connected' :'Connect Wallet'}</button>
         </div>
         </div>
