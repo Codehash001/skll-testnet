@@ -22,7 +22,7 @@ export default function Home() {
 the website located at https://skll-testnet.vercel.app/ and the content and functionalities accessible via the website (&quot;Site&quot;) offered by &quot;Skll Klub Limit Less&quot; (referred to in these Terms as either &quot;Skll Klub Limit Less&quot;, &quot;us&quot;, &quot;we&quot;, &quot;ours&quot;, &quot;team&quot; or &quot;Company&quot;) &quot;Skll Klub Limit Less&quot; provides its services (described below) and related content to you (&quot;you&quot; or &quot;User&quot;).</p>
 
 <ul className='list-decimal text-[20px] font-medium'>
-  <li>
+  <li className='mr-10'>
     <h1 className='text-[22px] font-bold'>Purpose:</h1>
     <p>Skll Klub Limit Less has adopted this NFT Insider Trading Policy (&quot;Policy&quot;) to help ensure that:</p>
     <ul className='list-none'>
@@ -38,7 +38,7 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
       </li>
     </ul>
     </li><br/><br/>
-  <li>
+  <li className='mr-10'>
     <h1 className='text-[25px] font-bold'>Scope:</h1>
     <p>
       <ul className='list-none'>
@@ -51,7 +51,7 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
       </ul>
     </p>
     </li><br/><br/>
-  <li>
+  <li className='mr-10'>
     <h1 className='text-[25px] font-bold'>Guidance:</h1>
     <p>
       <ul className='list-none'>
@@ -106,7 +106,7 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
       </ul>
     </p>
     </li><br/><br/>
-  <li>
+  <li className='mr-10'>
     <h1 className='text-[25px] font-bold'>Determining whether information is Material and Nonpublic:</h1>
     <p>
       <ul className='list-none'>
@@ -149,7 +149,7 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
       </ul>
     </p>
     </li><br/><br/>
-  <li>
+  <li className='mr-10'>
     <h1 className='text-[25px] font-bold'>Remedies for Violation:</h1>
     <p>
       <ul className='list-none'>
@@ -160,7 +160,7 @@ In the event that Company determines that an Insider violated the NFT Insider Tr
       </ul>
     </p>
     </li><br/><br/>
-  <li>
+  <li className='mr-10'>
     <h1 className='text-[25px] font-bold'>Contact Information:</h1> 
     <p>
       <ul className='list-none'>
