@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Footer from '../components/footer'
-import Doc from './Policy.html'
 
 
 
@@ -14,7 +13,6 @@ export default function Home() {
         <link rel="icon" href="/Logoicon.png" />
       </Head>
 
- <Doc/>
       
       <Footer/>
     
