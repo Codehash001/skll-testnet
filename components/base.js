@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Image from 'next/image'
 import { useState,useEffect } from "react"
 import { initOnboard } from "../ulits/onboard"
 import { config } from '../dapp.config'
