@@ -2,7 +2,7 @@ const { createAlchemyWeb3 } = require('@alch/alchemy-web3')
 import { config } from '../dapp.config'
 
 const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL)
-const contract = require('../artifacts/contracts/Skll.sol/Skll.json')
+const contract = require('../artifacts/contracts/SkLL.sol/Skll.json')
 const nftContract = new web3.eth.Contract(contract.abi, config.contractAddress)
 
 
