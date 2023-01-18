@@ -292,7 +292,7 @@ useEffect(() => {
             </div>
             <div className="lg:mx-8 md:mx-4 mx-2 md:mt-0 mt-2">
                 <img src="/bg-gif.gif"
-                className='md:w-[1000px] md:h-[350px] w-[400px] h-[500px]'/>
+                className='md:w-[500px] md:h-[500px] w-[400px] h-[500px]'/>
             </div>
         </div>
         </div>
