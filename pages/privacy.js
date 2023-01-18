@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="Description" content="Skulls Klubs LimitLess!" />
         <link rel="icon" href="/Logoicon.png" />
       </Head>
-      <div className= 'flex flex-col items-center md:mx-16 mx-2 font-Archivo'>
+      <div className= 'flex flex-col items-center md:mx-16 mx-2 font-Archivo [word-spacing:-2px]'>
 
         <h1 className='text-center text-3xl font-bold'>INSIDER TRADING POLICY</h1>
         <h1 className='text-center text-2xl font-bold'>LAST UPDATED: JAN 16, 2023</h1>
@@ -31,10 +31,9 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
       </li><br/>
       <li>
         Any distribution of NFT&apos;s by Company to Insiders in connection with a Project is conducted fairly and on equal footing with distributions to the public.
-      </li>
-        Company, the Project, and Insiders do not have even the appearance of improper insider trading.
+      </li><br/>
       <li>
-
+      Company, the Project, and Insiders do not have even the appearance of improper insider trading.
       </li>
     </ul>
     </li><br/><br/>
