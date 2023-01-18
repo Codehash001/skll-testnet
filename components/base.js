@@ -431,7 +431,7 @@ useEffect(() => {
   <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='https://twitter.com/skllproject0'>
     <img src='twitter.svg' className='h-8 w-8 m-1'/>
   </a>
-  `<a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href={'https://etherscan.io/'(config.contractAddress)}>
+  `<a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href={config.etherscanLink}>
     <img src='etherscansvg.svg' className='h-8 w-8 m-1'/>
   </a>`
 </div>
