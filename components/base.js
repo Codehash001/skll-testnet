@@ -425,18 +425,15 @@ useEffect(() => {
 
 {/* social media icons paste correct links down below */}
 <div className="flex w-full items-center justify-evenly mt-5 px-10">
-  <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='https://discord.com/invite/n'>
+  <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='https://discord.gg/pHUcMAzn'>
     <img src='discord.svg' className='h-8 w-8 m-1'/>
   </a>
-  <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='http://www.facebook.com/'>
-    <img src='facebook.svg' className='h-8 w-8 m-1'/>
-  </a>
-  <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='https://twitter.com/'>
+  <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='https://twitter.com/skllproject0'>
     <img src='twitter.svg' className='h-8 w-8 m-1'/>
   </a>
-  <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='https://etherscan.io/'>
+  `<a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href={`https://etherscan.io/`(config.contractAddress)}>
     <img src='etherscansvg.svg' className='h-8 w-8 m-1'/>
-  </a>
+  </a>`
 </div>
 
             <div className="font-Kanit max-w-screen-sm">
