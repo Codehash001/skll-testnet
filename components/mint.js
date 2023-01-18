@@ -239,7 +239,7 @@ useEffect(() => {
   </a>
 </div>
 
-            <div className="font-Kanit">
+            <div className="font-Kanit max-w-screen-sm">
               {status && (
               <div
                 className={`border ${
