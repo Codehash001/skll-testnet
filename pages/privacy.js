@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="Description" content="Skulls Klubs LimitLess!" />
         <link rel="icon" href="/Logoicon.png" />
       </Head>
-      <div className= 'flex flex-col items-center md:mx-16 mx-2 font-Archivo [word-spacing:-2px]'>
+      <div className= 'flex flex-col items-center md:mx-16 mx-2 font-Archivo [word-spacing:2px]'>
 
         <h1 className='text-center text-3xl font-bold'>INSIDER TRADING POLICY</h1>
         <h1 className='text-center text-2xl font-bold'>LAST UPDATED: JAN 16, 2023</h1>
