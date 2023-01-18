@@ -116,7 +116,7 @@ useEffect(() => {
           <div className='pb-4  flex flex-col items-center'>
 
             <h1 className="font-Kanit uppercase font-semibold text-3xl md:text-5xl bg-gradient-to-r from-pink-500 via-red-600 to-red-800 bg-clip-text text-transparent tracking-wider text-center mt-5">
-            {paused ? 'Paused' : 'Minting is Live'}
+            {paused ? 'Will be Live soon' : 'Minting is Live'}
             </h1>
 
             <h3 className="text-sm tracking-widest">
@@ -177,6 +177,8 @@ useEffect(() => {
                     </svg>
                   </button> 
                 </div> 
+
+                <h1 className='text-xl font-medium font-Kanit mt-5 tracking-wide"'>Max mint amount per wallet: {config.maxMintAmount}</h1>
 
                 <div className="border-t border-b py-4 mt-5 w-full font-semibold">
                   <div className="w-full text-xl font-Kanit flex items-center justify-between text-yellow-900">

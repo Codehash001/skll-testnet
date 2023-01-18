@@ -3,9 +3,9 @@ const RPC_URL = process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL
 const config = {
   title: 'Dapp',
   description: 'test minting Dapp',
-  contractAddress: '0x13e7336D67f092e49870e9ed548e0035573e34dF',
-  maxMintAmount: 900,
-  publicSalePrice: 1
+  contractAddress: '0x31Ac6d1061C3b9CE1AC5476909BC55eB94375452',
+  maxMintAmount: 5,
+  publicSalePrice: 0.6
 }
 
 const onboardOptions = {
@@ -21,7 +21,7 @@ const onboardOptions = {
         walletName: 'walletLink',
         preferred: true,
         rpcUrl: RPC_URL,
-        appName: 'weRjapaneseTest01 Dapp'
+        appName: 'Dapp'
       },
       
       { walletName: 'trust', preferred: true, rpcUrl: RPC_URL },
@@ -35,7 +35,7 @@ const onboardOptions = {
       {
         walletName: 'lattice',
         rpcUrl: RPC_URL,
-        appName: 'weRjapaneseTest01 Dapp'
+        appName: 'Dapp'
       },
       {
         walletName: 'keepkey',

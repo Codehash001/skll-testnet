@@ -1,16 +1,15 @@
-const hre = require('hardhat')
+require ('@nomiclabs/hardhat-etherscan')
+const hre = require( 'hardhat')
 
 const _initBaseURI='ipfs://QmYG397NbS5FLxNbo2oavBSSid5MwJ6j/'
 
+
 async function main() {
 
-  // Deploy the contract
-  const skll = await hre.ethers.getContractFactory('Skll')
-  const SKLL = await skll.deploy(
-    _initBaseURI)
-  await SKLL.deployed()
-
-  console.log('SKLL deployed to:', SKLL.address)
+  await hre.run('verify:verify', {
+    address: '0x31Ac6d1061C3b9CE1AC5476909BC55eB94375452',
+    constructorArguments: [_initBaseURI]
+  })
 }
 
 // We recommend this pattern to be able to use async/await everywhere
