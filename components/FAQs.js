@@ -24,31 +24,31 @@ export default function FAQs() {
         <AccordionHeader onClick={() => handleOpen(1)} className='text-black dark:text-white font-Archivo  text-[21px]'>
           How do I get SKLL nfts?
         </AccordionHeader>
-        <AccordionBody className='text-justify dark:text-gray-300 text-gray-700 font-Archivo  text-[20px]'>
+        <AccordionBody className='text-justify dark:text-gray-300 text-gray-700 font-Archivo  text-[20px] text-start'>
          Go to minting section and connect your wallet. Then choose the number that you need to mint and confirm the transaction.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 2} animate={customAnimation} className='text-black dark:text-white font-Archivo  text-[22px]'>
+      <Accordion open={open === 2} animate={customAnimation} className='text-black dark:text-white font-Archivo  text-[22px] text-start'>
         <AccordionHeader onClick={() => handleOpen(2)}>
           What is the minting price?
         </AccordionHeader>
-        <AccordionBody className='text-justify dark:text-gray-300 text-gray-700 font-Archivo text-[20px]'>
+        <AccordionBody className='text-justify dark:text-gray-300 text-gray-700 font-Archivo text-[20px] text-start'>
         0.6 Eth per nft
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 3} animate={customAnimation} className='text-black dark:text-white font-Archivo  text-[22px]'>
+      <Accordion open={open === 3} animate={customAnimation} className='text-black dark:text-white font-Archivo  text-[22px] text-start'>
         <AccordionHeader onClick={() => handleOpen(3)}>
           How much is the opensea Royalty fee?
         </AccordionHeader>
-        <AccordionBody className='text-justify dark:text-gray-300 text-gray-700 font-Archivo  text-[20px]'>
+        <AccordionBody className='text-justify dark:text-gray-300 text-gray-700 font-Archivo  text-[20px] text-start'>
           5%
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 4} animate={customAnimation} className='ttext-black dark:text-whitefont-Archivo text-[21px]'>
+      <Accordion open={open === 4} animate={customAnimation} className='ttext-black dark:text-whitefont-Archivo text-[21px] text-start'>
         <AccordionHeader onClick={() => handleOpen(4)}>
           What is the total supply of SKLL NFts?
         </AccordionHeader>
-        <AccordionBody className='text-justify dark:text-gray-300 text-gray-700 font-Archivo text-[20px]'>
+        <AccordionBody className='text-justify dark:text-gray-300 text-gray-700 font-Archivo text-[20px] text-start'>
         900 NFTs
         </AccordionBody>
       </Accordion>

@@ -195,7 +195,7 @@ const handleNav = () => {
         
         {/* Side Drawer Menu */}
       <div className ={
-        nav? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-black p-10 ease-in duration-500 border-r-2"
+        nav? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500 border-r-2"
       :'fixed left-[-100%] top-0 p-10 ease-in duration-500 h-screen'
       }>
       <div className='flex w-full items-center justify-between'>
@@ -216,22 +216,22 @@ const handleNav = () => {
              </div>
           </div>
           <div className='border-b py-4 flex flex-col mt-4'>
-              <p className='uppercase text-[18px] text-white font-Archivo text-center'>
+              <p className='uppercase text-[18px] font-Archivo text-center'>
               Skulls Klubs Limit Less
               </p>
             </div>
             <div  className='py-4 flex flex-col '>
         <ul className='font-Archivo text-center'>
-            <li  className='py-4 text-sm text-white'>
+            <li  className='py-4 text-sm'>
             <Link onClick={() => setNav(false)}  className="cursor-pointer" activeClass ="active" to='home' spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
             </li>
-            <li  className='py-4 text-sm text-white'>
+            <li  className='py-4 text-sm'>
             <Link onClick={() => setNav(false)}  className="cursor-pointer" activeClass ="active" to='mint' spy={true} smooth={true} offset={-70} duration={500}>Mint</Link>
             </li>
-            <li  className='py-4 text-sm text-white'>
+            <li  className='py-4 text-sm'>
             <Link onClick={() => setNav(false)} className="cursor-pointer" activeClass ="active" to='contact' spy={true} smooth={true} offset={-70} duration={500}>Contact Us</Link>
             </li>
-            <li  className='py-4 text-sm text-white'>
+            <li  className='py-4 text-sm'>
             <Link onClick={() => setNav(false)} className="cursor-pointer" activeClass ="active" to='faqs' spy={true} smooth={true} offset={-100} duration={500}>FAQs</Link>
             </li>
             
@@ -303,9 +303,9 @@ const handleNav = () => {
                 </Link>
                 </div>
             </div>
-            <div className="lg:mx-8 md:mx-4 mx-2 md:mt-0 mt-2">
+            <div className="lg:mx-8 md:mx-4 mx-2 md:mt-0 mt-2 flex flex-col items-end justify-center">
                 <img src="/bg-gif.gif"
-                className='md:w-[500px] md:h-[500px] w-[400px] h-[500px]'/>
+                className='md:w-[500px] md:h-[500px] w-[400px] h-[400px]'/>
             </div>
         </div>
         </div>
