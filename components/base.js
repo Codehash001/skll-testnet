@@ -72,6 +72,10 @@ useEffect(() => {
   }
 }, [onboard, previouslySelectedWallet])
 
+const handleNav = () => {
+  setNav(!nav);
+}
+
   const connectWalletHandler = async () => {
     const walletSelected = await onboard.walletSelect()
     if (walletSelected) {
@@ -79,6 +83,17 @@ useEffect(() => {
       window.location.reload(false)
     }
   }
+
+  const connectWalletHandlerMobile = async () => {
+    setNav(false)
+    const walletSelected = await onboard.walletSelect()
+    if (walletSelected) {
+      await onboard.walletCheck()
+      window.location.reload(false)
+      
+    }
+  }
+
   const incrementMintAmount = () => {
     if (mintAmount < maxMintAmount) {
       setMintAmount(mintAmount + 1)
@@ -105,9 +120,7 @@ useEffect(() => {
     setIsMinting(false)
   }
 
-  const handleNav = () => {
-    setNav(!nav);
-  };
+  
   return (
     <>
     {/* nav */}
@@ -231,7 +244,7 @@ useEffect(() => {
                         <Darkmodebutton/>
                     </div>
                     <button type="button" class="text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
-             onClick={connectWalletHandler}>{walletAddress?'Connected' :'Connect Wallet'}</button>
+             onClick={connectWalletHandlerMobile}>{walletAddress?'Connected' :'Connect Wallet'}</button>
         </div>
         </div>
         
