@@ -12,19 +12,18 @@ export default function Home() {
         <meta name="Description" content="Skulls Klubs LimitLess!" />
         <link rel="icon" href="/Logoicon.png" />
       </Head>
-      <div className='flex flex-col items-center d:mx-16 mx-2 font-Archivo'>
-        <h1 className='text-start text-lg'>Policy:</h1>
+      <div className= 'flex flex-col items-center md:mx-16 mx-2 font-Archivo'>
 
         <h1 className='text-center text-3xl font-bold'>INSIDER TRADING POLICY</h1>
         <h1 className='text-center text-2xl font-bold'>LAST UPDATED: JAN 16, 2023</h1>
         <br/>
         <br/>
-        <p>Thank you for visiting our Insider Trading Policy. Please read this Insider Trading Policy (&quot;Trading Policy&quot; or &quot;Policy&quot;) carefully because they govern your use of the &quot;Skll Klub Limit Less&quot; brand, original collection of 900 NFT's.
+        <p className='text-[20px] font-medium'>Thank you for visiting our Insider Trading Policy. Please read this Insider Trading Policy (&quot;Trading Policy&quot; or &quot;Policy&quot;) carefully because they govern your use of the &quot;Skll Klub Limit Less&quot; brand, original collection of 900 NFT's.
 the website located at https://skll-testnet.vercel.app/ and the content and functionalities accessible via the website (&quot;Site&quot;) offered by &quot;Skll Klub Limit Less&quot; (referred to in these Terms as either &quot;Skll Klub Limit Less&quot;, &quot;us&quot;, &quot;we&quot;, &quot;ours&quot;, &quot;team&quot; or &quot;Company&quot;) &quot;Skll Klub Limit Less&quot; provides its services (described below) and related content to you (&quot;you&quot; or &quot;User&quot;).</p>
 
-<ul className='list-decimal text-[24px] font-medium'>
+<ul className='list-decimal text-[20px] font-medium'>
   <li>
-    <h1 className='text-[25px] font-bold'>Purpose:</h1>
+    <h1 className='text-[22px] font-bold'>Purpose:</h1>
     <p>Skll Klub Limit Less has adopted this NFT Insider Trading Policy (&quot;Policy&quot;) to help ensure that:</p>
     <ul className='list-none'>
       <li>
@@ -38,7 +37,7 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
 
       </li>
     </ul>
-    </li>
+    </li><br/><br/>
   <li>
     <h1 className='text-[25px] font-bold'>Scope:</h1>
     <p>
@@ -51,7 +50,7 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
         </li>
       </ul>
     </p>
-    </li>
+    </li><br/><br/>
   <li>
     <h1 className='text-[25px] font-bold'>Guidance:</h1>
     <p>
@@ -106,7 +105,7 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
         </li>
       </ul>
     </p>
-    </li>
+    </li><br/><br/>
   <li>
     <h1 className='text-[25px] font-bold'>Determining whether information is Material and Nonpublic:</h1>
     <p>
@@ -149,7 +148,7 @@ the website located at https://skll-testnet.vercel.app/ and the content and func
       </li>
       </ul>
     </p>
-    </li>
+    </li><br/><br/>
   <li>
     <h1 className='text-[25px] font-bold'>Remedies for Violation:</h1>
     <p>
@@ -160,7 +159,7 @@ In the event that Company determines that an Insider violated the NFT Insider Tr
         </li>
       </ul>
     </p>
-    </li>
+    </li><br/><br/>
   <li>
     <h1 className='text-[25px] font-bold'>Contact Information:</h1> 
     <p>
