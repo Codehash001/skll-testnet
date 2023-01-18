@@ -244,7 +244,7 @@ useEffect(() => {
     <div className="mt-[100px]" id='home'data-aos="fade">
         <div className="flex md:flex-row flex-col items-center lg:mx-16 md:mx-8 mx-2 justify-between">
             <div className="lg:mx-8 md:mx-4 mx-2 flex flex-col md:items-start items-center">
-                <h1 className="text-gray-700 dak:text-gray-300 text-2xl md:mb-[-5px] md:2">Welcome To</h1>
+                
                 <ul className="font-Archivo md:hidden items-center ">
                     <li className="mx-4 text-start flex items-end">
                         <h1 className="md:text-8xl text-6xl uppercase font-bold bg-gradient-to-r from-rose-600 via-red-700 to-red-600 bg-clip-text text-transparent">S</h1>
@@ -263,7 +263,7 @@ useEffect(() => {
                 <ul className="hidden font-Archivo md:flex items-center ">
                     <li className="mx-4 text-start items-end">
                         <h1 className="md:text-9xl text-6xl uppercase font-bold bg-gradient-to-r from-rose-600 via-red-700 to-red-600 bg-clip-text text-transparent">SKLL</h1>
-                        <h1 className="md:text-7xl text-4xl font-medium">
+                        <h1 className="md:text-6xl text-4xl font-medium">
                           <span className='font-bold uppercase '>S</span>kull{' '}
                           <span className='font-bold uppercase '>K</span>lub{' '}
                           <span className='font-bold uppercase '>L</span>imit{' '}
@@ -273,7 +273,7 @@ useEffect(() => {
                 </ul>
 
                 <p className="font-Archivo mt-4 md:text-md text-justify">
-                  <ul className='list-disc'>
+                  <ul className='list-disc md:ml-[10px]'>
                     <li>Every SKLL has own profile page that shows their attributes.</li>
                     <li>Collection with proof of ownership stored on Ethereum blockchain.</li>
                     <li>A single person on the Ethereum blockchain can officially own each one of this unique collection.</li>
