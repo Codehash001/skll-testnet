@@ -131,7 +131,7 @@ const handleNav = () => {
             <img
               src="/logo.jpeg"
               alt='/'
-              className='cursor-pointer rounded-full w-[60px] h-[75px] '
+              className='cursor-pointer rounded-lg w-[40px] h-[40px]'
             /> 
             
           </a>
@@ -202,7 +202,7 @@ const handleNav = () => {
                    <img
               src="/logo.jpeg"
               alt='/'
-              className='cursor-pointer rounded-full w-[60px] h-[75px] '
+              className='cursor-pointer rounded-lg w-[40px] h-[40px]'
             /> 
                 </a>
               </Link>
