@@ -49,7 +49,7 @@ export default function FAQs() {
           What is the total supply of SKLL NFts?
         </AccordionHeader>
         <AccordionBody className='text-justify dark:text-gray-300 text-gray-700 font-Archivo text-[20px]'>
-        900 NFTs
+        910 NFTs
         </AccordionBody>
       </Accordion>
     </div>

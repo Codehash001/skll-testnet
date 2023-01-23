@@ -287,6 +287,7 @@ const handleNav = () => {
 
                 <p className="font-Archivo mt-4 md:text-md text-justify">
                   <ul className='list-none '>
+                    <li>9-0 uniquely generated charachters</li>
                     <li>Every SKLL has own profile page that shows their attributes.</li>
                     <li>Collection with proof of ownership stored on Ethereum blockchain.</li>
                     <li>A single person on the Ethereum blockchain can officially own each one of this unique collection.</li>
@@ -357,7 +358,7 @@ const handleNav = () => {
           </div>
           <div className='flex flex-col'>
             <p className="text-2xl font-medium font-Kanit mt-5 tracking-wide">
-                  <span className="text-red-600">{totalMinted}{'  '} </span>/<span className="text-red-600">{'  '} {maxSupply}{'  '}</span>Minted
+                  <span className="text-red-600">{totalMinted}{'  '} </span>/<span className="text-red-600">{'  '} 910{'  '}</span>Minted
             </p>
           </div>
           
