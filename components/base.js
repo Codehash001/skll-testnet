@@ -128,14 +128,12 @@ const handleNav = () => {
     <div className='fixed z-[100] top-0 flex items-center justify-between w-full h-20 px-2 lg:px-8 bg-transparent filter backdrop-blur-md'>
           <Link className="cursor-pointer" activeClass ="active" to='home' spy={true} smooth={true} duration={500}>
           <a>
-            {/* <Image
-              src="/Logo.png"
+            <img
+              src="/logo.jpeg"
               alt='/'
-              width='80'
-              height='80'
-              className='cursor-pointer '
-            /> */}
-            LOGO
+              className='cursor-pointer rounded-full w-[60px] h-[75px] '
+            /> 
+            
           </a>
         </Link>
         <div>
@@ -201,13 +199,11 @@ const handleNav = () => {
       <div className='flex w-full items-center justify-between'>
       <Link className="cursor-pointer" activeClass ="active" to='home' spy={true} smooth={true} duration={500}>
                 <a>
-                  <Image
-                    src="/Logoicon.png"
-                    width='45'
-                    height='45'
-                    alt='/'
-                    className="rounded-md"
-                  />
+                   <img
+              src="/logo.jpeg"
+              alt='/'
+              className='cursor-pointer rounded-full w-[60px] h-[75px] '
+            /> 
                 </a>
               </Link>
               <div onClick={handleNav}
