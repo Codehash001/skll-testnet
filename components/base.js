@@ -316,7 +316,7 @@ const handleNav = () => {
    {data.map((item) =>
    <div key={item.id}className="max-w-sm bg-transpaent rounded-xl transform hover:scale-105 transition duration-500" data-aos="fade-up">
       <div className="relative">
-        <img className="md:w-[500px] md:h-[500px] w-auto h-auto rounded-xl" src={item.image}alt="img" />
+        <img className="md:w-[500px] md:h-[300px] w-auto h-auto rounded-xl" src={item.image}alt="img" />
       </div>
     </div>
     )}
