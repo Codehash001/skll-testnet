@@ -300,10 +300,10 @@ const handleNav = () => {
                 </Link>
                 </div>
             </div>
-            <div className="lg:mx-8 md:mx-4 mx-2 md:mt-0 mt-2 flex flex-col items-end justify-center">
+           {/* <div className="lg:mx-8 md:mx-4 mx-2 md:mt-0 mt-2 flex flex-col items-end justify-center">
                 <img src="/bg-gif.gif"
-                className='md:w-[500px] md:h-[500px] w-[400px] h-[400px]'/>
-            </div>
+                className='md:w-[500px] md:h-[500px] w-[400px] h-[400px]'/> 
+            </div>*/}
         </div>
         </div>
 
