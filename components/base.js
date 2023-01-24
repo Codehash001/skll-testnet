@@ -213,7 +213,7 @@ const handleNav = () => {
           </div>
           <div className='border-b py-4 flex flex-col mt-4'>
               <p className='uppercase text-[18px] font-Archivo text-center font-semibold'>
-              Skulls Klubs Limit Less
+              Skull Klub Limit Less
               </p>
             </div>
             <div  className='py-4 flex flex-col '>
