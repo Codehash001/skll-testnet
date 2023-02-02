@@ -7,16 +7,16 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 
-contract Skll is ERC721A, Ownable, ReentrancyGuard {
+contract SKLL is ERC721A, Ownable, ReentrancyGuard {
   using Strings for uint256;
 
   string public baseURI;
   string public baseExtension = ".json";
   string public notRevealedUri; 
 
-  uint256 public cost = 0.6 ether;
+  uint256 public cost = 0.01 ether;
   uint256 public wlCost = 0 ether;
-  uint256 public maxSupply = 900;
+  uint256 public maxSupply = 908;
   uint256 public MaxperWallet = 5;
   uint256 public MaxperWalletWL = 5;
 
@@ -29,7 +29,7 @@ contract Skll is ERC721A, Ownable, ReentrancyGuard {
 
   constructor(
     string memory _initBaseURI
-  ) ERC721A("Skull Klub Limitless", "Skll") {
+  ) ERC721A("Skull Klub Limit Less", "SKLL") {
     setBaseURI(_initBaseURI);
     
   }

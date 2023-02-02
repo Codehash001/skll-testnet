@@ -8,9 +8,16 @@ import Footer from '../components/footer'
 import FAQs from '../components/FAQs'
 import Mint from '../components/mint'
 import Base from '../components/base'
+import ReactGA from 'react-ga'
+import {useEffect} from 'react'
 
 
 export default function Home() {
+
+useEffect(()=>{
+ReactGA.initialize('G-YMXN1F5HMZ');
+ReactGA.pageview(window.location.pathname);
+},[])
   return (
     <div>
       <Head>
