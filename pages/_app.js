@@ -17,7 +17,6 @@ export default function App({ Component, pageProps }) {
   return (
    
     <div>
-    <Head>
 
 <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-YMXN1F5HMZ"/>
     <Script
@@ -34,7 +33,6 @@ export default function App({ Component, pageProps }) {
         `,
         }}
     />
-    </Head>
   <ThemeProvider enableSystem={true} attribute='class'>
   <Component {...pageProps} />
   </ThemeProvider>
